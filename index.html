@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Be My Valentine ❤️</title>
+</head>
+<body style="background:#ffb6c1; text-align:center; font-family:Arial;">
+
+<h1>Chidinma 💖</h1>
+<p style="font-size:22px;">Will you be my Valentine?</p>
+
+<button onclick="yesClicked()" style="padding:15px; font-size:18px;">
+YES 😍
+</button>
+
+<button id="no" onmouseover="move()" style="padding:15px; font-size:18px; position:absolute;">
+NO 🙃
+</button>
+
+<script>
+function yesClicked(){
+  document.body.innerHTML = "<h1>Yay!!! 💕😍</h1><p>Happy Valentine’s Day, Chidinma 🌹</p>";
+}
+
+function move(){
+  let x = Math.random() * 300;
+  let y = Math.random() * 300;
+  document.getElementById("no").style.left = x + "px";
+  document.getElementById("no").style.top = y + "px";
+}
+</script>
+
+</body>
+</html>
